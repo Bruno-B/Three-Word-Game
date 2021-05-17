@@ -23,7 +23,11 @@ function App() {
       </div>
       <label htmlFor="new-sentence" >
         Insert 3 words
-        <input aria-label="new-sentence" onChange={e => setSentence(e.target.value)} value={sentence} />
+        <input
+          aria-label="new-sentence"
+          onChange={e => setSentence(e.target.value)}
+          value={sentence}
+        />
       </label>
       <button onClick={addSentence} >Send</button>
       <div>
